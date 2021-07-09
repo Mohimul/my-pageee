@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    
+
+
+    <style>
+
+*{
+
+margin: 0%;
+padding: 0%;
+
+}
+
+body{
+background: rgb(65, 23, 65);
+color: white;
+}
+.cal{
+
+
+ margin: 0 auto;
+ background: gainsboro;
+ width: 185px;
+ text-align: center;
+ border-radius: 20px;
+ margin-top: 10%;
+ background: rgb(19, 61, 61);
+ height: 270px;
+  
+
+
+
+
+}
+.cal input{
+
+height: 25px;
+width: 25px;
+transition: 0.1s;
+border: none;
+border-radius: 2px;
+cursor: pointer;
+background-color: rgb(59, 13, 38);
+color: rgb(100, 80, 54);
+
+}
+#text{
+
+
+width: 55%;
+margin-top: 15px;
+text-align: right;
+outline: none;
+background: rgb(39, 39, 90);
+color: rgb(221, 203, 203);
+
+}
+.cal input:hover{
+
+
+color: rgb(7, 7, 78);
+background-color: rgb(41, 100, 29);
+} 
+#active {
+color: rgb(0, 0, 0);
+background-color: rgb(87, 71, 71);
+width: 100px;
+
+
+}
+#c{
+
+color: rgb(0, 0, 0);
+background-color: rgb(78, 42, 42);
+
+
+}
+#active:hover{
+
+background-color: rgb(54, 38, 38);
+}
+
+#c:hover{
+
+background-color: rgb(54, 38, 38);
+}
+
+
+
+
+    </style>
+</head>
+<body>
+    <div class="cal">
+        <form name="cal">
+    
+            <input id="text" type="text" name="display">
+            <br><br>
+           
+            <input type="button" value="7" onclick="cal.display.value+='7'">
+            <input type="button" value="8" onclick="cal.display.value+='8'">
+            <input type="button" value="9" onclick="cal.display.value+='9'">
+            <input type="button" value="*" onclick="cal.display.value+='*'">
+            <br><br>
+           
+           
+            <input type="button" value="4" onclick="cal.display.value+='4'">
+            <input type="button" value="5" onclick="cal.display.value+='5'">
+            <input type="button" value="6" onclick="cal.display.value+='6'">
+            <input type="button" value="-" onclick="cal.display.value+='-'">
+            <br><br>
+           
+            <input type="button" value="1" onclick="cal.display.value+='1'">
+            <input type="button" value="2" onclick="cal.display.value+='2'">
+            <input type="button" value="3" onclick="cal.display.value+='3'">
+            <input type="button" value="+" onclick="cal.display.value+='+'">
+            <br><br>
+           
+           
+            <input type="button" value="0" onclick="cal.display.value+='0'">
+            <input type="button" value="/" onclick="cal.display.value+='/'">
+            <input type="button" value="%" onclick="cal.display.value+='%'">
+            <input id="c" type="button" value="C" onclick="cal.display.value= ' '" id="del">
+           
+            <br><br>
+            
+            <input id="active" type="button" value="=" onclick="cal.display.value=eval(cal.display.value)">
+
+        </form>
+    
+
+</div>
+
+
+
+
+
+
+</body>
+</html>
